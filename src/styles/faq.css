@@ -1,0 +1,37 @@
+.faq {
+  padding: 1.5rem;
+  background-color: #222;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.faq * {
+  outline: none;
+}
+
+.faq ul {
+  list-style: none;
+}
+
+.faq > ul > li {
+  margin-top: 2rem;
+}
+
+.faq details {
+  cursor: pointer;
+}
+
+.faq summary {
+  font-weight: bold;
+  color: white;
+}
+
+.faq details ul,
+.faq details ol {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.faq details ul li {
+  list-style: disc;
+}

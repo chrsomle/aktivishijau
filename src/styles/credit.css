@@ -1,0 +1,19 @@
+.credit {
+  font-size: 12px;
+  position: absolute;
+  left: 10%;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.credit i {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.credit .link {
+  margin-left: 0;
+  font-weight: bold;
+  color: #fff;
+}
