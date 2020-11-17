@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aktivis Hijau – A non-governmental environmental organization.</title>
+    <title>Aktivis Hijau – Komunitas Lingkungan</title>
     <meta
       name="description"
-      content="Aktivis Hijau adalah sebuah komunitas lingkungan yang bervisi menyediakan pendidikan
-      lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia,
-      khususnya anak-anak, dengan memberdayakan para pemuda."
+      content="Sebuah komunitas lingkungan yang menyediakan pendidikan lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia."
     />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Aktivis Hijau – Komunitas Lingkungan" />
     <meta
       property="og:description"
-      content="Aktivis Hijau adalah sebuah komunitas lingkungan yang bervisi menyediakan pendidikan
-      lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia,
-      khususnya anak-anak, dengan memberdayakan para pemuda."
+      content="Sebuah komunitas lingkungan yang menyediakan pendidikan lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia."
     />
-    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:image" content="https://aktivishijau.social/images/icons/oglogo.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aktivishijau.netlify.app/" />
+    <meta property="og:site_name" content="Aktivis Hijau" />
+    <meta property="og:url" content="https://aktivishijau.social/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:image" content="https://aktivishijau.social/images/icons/oglogo.png" />
+    <meta name="twitter:image:alt" content="Aktivis Hijau" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="images/logo.png" />
-    <meta name="twitter:title" content="Aktivis Hijau" />
-    <meta
-      name="twitter:description"
-      content="Aktivis Hijau adalah sebuah komunitas lingkungan yang bervisi menyediakan pendidikan
-      lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia,
-      khususnya anak-anak, dengan memberdayakan para pemuda."
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="180x180" href="./images/icons/ios-homescreen.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/icons/android-homescreen.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./images/icons/android-splashscreen.png"
+    />
+
+    <meta name="theme-color" content="#57a857" />
+    <meta
+      name="keywords"
+      content="komunitas lingkungan, aktivis hijau, climate change, perubahan iklim"
+    />
+    <meta name="robots" content="noarchive" />
+    <meta name="author" content="Christianto Budisaputra" />
     <script src="https://kit.fontawesome.com/9e50011206.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" sizes="16x16" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" sizes="16x16" href="./images/icons/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="canonical" href="https://aktivishijau.social" />
   </head>
   <body class="App">
     <!-- Header -->
@@ -38,26 +59,32 @@
       <!-- NavBar -->
       <div class="nav">
         <div class="nav-brand">
-          <a href="./"><img src="images/logo.png" alt="Aktivis Hijau Logo" width="12" /></a>
+          <a rel="noopener" rel="noreferrer" href="./"
+            ><img src="images/icons/logo.png" alt="Aktivis Hijau Logo" width="12"
+          /></a>
         </div>
         <ul class="nav-links">
-          <li><a class="link" href="#gyp">Green Youth Project</a></li>
-          <li><a class="link" href="#about">About</a></li>
-          <li><a class="link" href="#contact">Contact</a></li>
+          <li>
+            <a rel="noopener" rel="noreferrer" class="link" href="#gyp">Green Youth Project</a>
+          </li>
+          <li><a rel="noopener" rel="noreferrer" class="link" href="#about">About</a></li>
+          <li><a rel="noopener" rel="noreferrer" class="link" href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <!-- Header Content -->
-      <main>
+      <div class="App-header__title">
         <h1>From youth, to youth,<br />for the sake of mother earth.</h1>
         <p>— Aktivis Hijau</p>
-      </main>
+      </div>
 
       <span class="credit">
         <i class="fas fa-link"></i>
         <span
           >Photo by
           <a
+            rel="noopener"
+            rel="noreferrer"
             class="link"
             target="_blank"
             href="https://unsplash.com/@plasticmind?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
@@ -66,6 +93,8 @@
           <br />
           on
           <a
+            rel="noopener"
+            rel="noreferrer"
             class="link"
             target="_blank"
             href="https://unsplash.com/s/photos/forest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
@@ -80,41 +109,52 @@
       <!-- Green Youth Project Section -->
       <section class="section" id="gyp">
         <header class="section-header">
-          <span class="icon"><i class="fas fa-cogs"></i></span>
+          <i class="fas fa-cogs"></i>
           <h1>Green Youth Project</h1>
         </header>
-        <main class="section-content">
+        <div class="section-content">
           <div class="section-content__left">
             <div class="info">
               <i class="fas fa-door-open"></i>
               <div>
-                <h1>The Earth Wants You!</h1>
-                <p>
-                  <strong>Batch 2 is now open!</strong> Daftarkan dirimu menjadi anggota Green Youth
-                  Project Batch 2!
-                </p>
+                <h1>Batch 2 is now open!</h1>
+                <p>Daftarkan dirimu menjadi anggota Green Youth Project Batch 2!</p>
               </div>
             </div>
-            <br />
             <h1>Volunteering buat <strong>lingkungan</strong> yuk!</h1>
-            <p>
+            <p class="section-content__desc">
               Beberapa dari kalian mungkin udah denger tentang
               <strong>Green Youth Project</strong> atau GYP, nah jadi GYP itu adalah program Aktivis
               Hijau di mana kalian berkesempatan jadi bagian dari kita! Selama
               <strong>3 bulan</strong>, kita bakal kerja dan seru-seruan bareng! Tunggu apa lagi?
               Jangan lupa daftar batch 2 ya!
             </p>
-            <i class="fas fa-sign-in-alt"></i>&nbsp;
-            <a class="link" target="_blank" href="https://bit.ly/DaftarAH">Registrasi sekarang!</a>
+            <div class="cta">
+              <i class="fas fa-sign-in-alt"></i>
+              <a
+                rel="noopener"
+                rel="noreferrer"
+                class="link"
+                target="_blank"
+                href="https://bit.ly/DaftarAH"
+                >Registrasi sekarang!</a
+              >
+            </div>
           </div>
           <div class="section-content__right">
             <div class="faq">
-              <h2>FAQ (Frequently Asked Questions)</h2>
-              <ul>
-                <li>
-                  <details open>
-                    <summary>Divisi apa sih yang ditawarkan?</summary>
-                    <ol>
+              <h2>FAQ</h2>
+              <ul class="faq-list">
+                <li class="faq-list__item">
+                  <details>
+                    <summary class="faq-list__item-question">
+                      Departmen apa aja sih yang ditawarkan?
+                    </summary>
+                    <p class="faq-list__item-desc">
+                      Berikut merupakan list departemen yang ada dan ditawarkan Aktivis Hijau saat
+                      ini:
+                    </p>
+                    <ol class="faq-list__item-answer">
                       <li>Socmed Management</li>
                       <li>Project Management</li>
                       <li>Partnership Department</li>
@@ -123,14 +163,14 @@
                     </ol>
                   </details>
                 </li>
-                <li>
-                  <details open>
-                    <summary>Kriterianya apa aja?</summary>
-                    <p>
+                <li class="faq-list__item">
+                  <details>
+                    <summary class="faq-list__item-question">Kriterianya apa aja?</summary>
+                    <p class="faq-list__item-desc">
                       Yang pasti setiap departemen memiliki kriteria yang berbeda-beda, tapi untuk
                       kriteria umumnya adalah sebagai berikut:
                     </p>
-                    <ul>
+                    <ul class="faq-list__item-answer">
                       <li>Berumur antara 16-25 tahun</li>
                       <li>Memiliki ketertarikan yang tinggi pada isu lingkungan</li>
                       <li>Berkeinginan untuk terlibat aktif untuk mengembangkan Aktivis Hijau</li>
@@ -141,19 +181,19 @@
               </ul>
             </div>
           </div>
-        </main>
+        </div>
       </section>
 
       <!-- About Section -->
       <section class="section" id="about">
         <header class="section-header">
-          <span class="icon"><i class="fas fa-info"></i></span>
+          <i class="fas fa-info"></i>
           <h1>About</h1>
         </header>
-        <main class="section-content">
+        <div class="section-content">
           <div class="section-content__left">
             <h1>Tentang Aktivis Hijau</h1>
-            <p>
+            <p class="section-content__desc">
               Aktivis Hijau adalah sebuah komunitas lingkungan yang bervisi menyediakan pendidikan
               lingkungan, khususnya perubahan iklim dan krisis sampah, untuk masyarakat Indonesia,
               khususnya anak-anak, dengan memberdayakan para pemuda.
@@ -164,95 +204,199 @@
             <div class="faces">
               <div class="profile">
                 <div class="profile-detail">
-                  <img src="./images/prota.jpg" alt="Protasius Isyudanto" />
+                  <img
+                    src="./images/people/protasius-isyudanto.jpg"
+                    alt="Protasius Isyudanto"
+                    width="100"
+                    height="100"
+                  />
                   <div>
-                    <h2>Protasius Isyudanto</h2>
-                    <p>Co-Founder, Director</p>
+                    <h2 class="profile-name">Protasius Isyudanto</h2>
+                    <p class="profile-role">Director</p>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/protasius-isyudanto-2001/">
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/protasius-isyudanto-2001/"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="profile">
                 <div class="profile-detail">
-                  <img src="./images/ian.jpg" alt="Dominic Finian Gunawan" />
+                  <img
+                    src="./images/people/dominic-finian.jpg"
+                    alt="Dominic Finian Gunawan"
+                    width="100"
+                    height="100"
+                  />
                   <div>
-                    <h2>Dominic Finian</h2>
-                    <p>Co-Founder</p>
+                    <h2 class="profile-name">Dominic Finian</h2>
+                    <p class="profile-role">Head of Finance and Business</p>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/dominic-finian-gunawan-866024195/">
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/dominic-finian-gunawan-866024195/"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="profile">
                 <div class="profile-detail">
-                  <img src="./images/ayu.jpg" alt="Arthanti Ayu Puspaningrum" />
+                  <img
+                    src="./images/people/arthanti-ayu.jpg"
+                    alt="Arthanti Ayu Puspaningrum"
+                    width="100"
+                    height="100"
+                  />
                   <div>
-                    <h2>Arthanti Ayu</h2>
-                    <p>Co-Founder</p>
+                    <h2 class="profile-name">Arthanti Ayu</h2>
+                    <p class="profile-role">Head of Monitoring and Development</p>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/arthanti-ayu-puspaningrum-967a651a4/">
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/arthanti-ayu-puspaningrum-967a651a4/"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="profile">
                 <div class="profile-detail">
-                  <img src="./images/tian.jpg" alt="Christianto Budisaputra" />
+                  <img
+                    src="./images/people/asya-sukada.jpg"
+                    alt="Asya Sukada"
+                    width="100"
+                    height="100"
+                  />
                   <div>
-                    <h2>Christianto Budisaputra</h2>
-                    <p>Graphic Designer</p>
+                    <h2 class="profile-name">Asya Sukada</h2>
+                    <p class="profile-role">Head of Partnerships</p>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/christiantobudisaputra/">
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/asya-sukada-6a5a191a8/"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
               <div class="profile">
                 <div class="profile-detail">
-                  <img src="./images/asya.jpg" alt="Asya Sukada" />
+                  <img
+                    width="100"
+                    height="100"
+                    src="./images/people/christianto-budisaputra.jpg"
+                    alt="Christianto Budisaputra"
+                  />
                   <div>
-                    <h2>Asya Sukada</h2>
-                    <p>Head of Partnerships</p>
+                    <h2 class="profile-name">Christianto Budisaputra</h2>
+                    <p class="profile-role">Head of Informations</p>
                   </div>
                 </div>
-                <a href="https://www.linkedin.com/in/asya-sukada-6a5a191a8/">
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/christiantobudisaputra/"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="profile">
+                <div class="profile-detail">
+                  <img
+                    src="./images/people/ajie-kelana.jpg"
+                    alt="Ajie Kelana"
+                    width="100"
+                    height="100"
+                  />
+                  <div>
+                    <h2 class="profile-name">Ajie Kelana</h2>
+                    <p class="profile-role">Head of Content Division</p>
+                  </div>
+                </div>
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/ajie-kelana-87aa471bb"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="profile">
+                <div class="profile-detail">
+                  <img
+                    src="./images/people/aqila-hanan.jpg"
+                    alt="Aqila Hanan Salsabila"
+                    width="100"
+                    height="100"
+                  />
+                  <div>
+                    <h2 class="profile-name">Aqila Hanan</h2>
+                    <p class="profile-role">Head of Reasearch Division</p>
+                  </div>
+                </div>
+                <a
+                  rel="noopener"
+                  rel="noreferrer"
+                  aria-label="LinkedIn Profile"
+                  href="https://www.linkedin.com/in/aqila-hanan-b4b7a0190"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </section>
 
       <!-- Contact Section -->
       <section class="section" id="contact">
         <header class="section-header">
-          <span class="icon"><i class="fas fa-address-book"></i></span>
+          <i class="fas fa-address-book"></i>
           <h1>Contact</h1>
         </header>
-        <main class="section-content">
+        <div class="section-content">
           <div class="section-content__left">
             <h1>Mutualan yuk!</h1>
-            <p>
-              Kalo ada yang mau kamu tanya, ketahui atau mengonfirmasi informasi lebih lanjut,
-              hubungi kami ya!
+            <p class="section-content__desc">
+              Kalo ada yang mau kamu tanya, ketahui, atau konfirmasi lebih lanjut, hubungi kami ya!
             </p>
-            <br />
             <div class="contact-info">
-              <a href="https://instagram.com/aktivis.hijau" class="link" target="_blank"
+              <a
+                rel="noopener"
+                rel="noreferrer"
+                href="https://instagram.com/aktivis.hijau"
+                class="link"
+                target="_blank"
                 ><i class="fab fa-instagram"></i>@aktivis.hijau</a
               >
             </div>
             <div class="contact-info">
-              <a href="https://twitter.com/AktivisHijau" class="link" target="_blank"
+              <a
+                rel="noopener"
+                rel="noreferrer"
+                href="https://twitter.com/AktivisHijau"
+                class="link"
+                target="_blank"
                 ><i class="fab fa-twitter"></i>@AktivisHijau</a
               >
             </div>
             <div class="contact-info">
               <a
+                rel="noopener"
+                rel="noreferrer"
                 href="https://www.youtube.com/channel/UCfhqTzGrmggtsIeSbls92nw"
                 class="link"
                 target="_blank"
@@ -260,12 +404,19 @@
               >
             </div>
             <div class="contact-info">
-              <a href="https://www.linkedin.com/company/aktivis-hijau" class="link" target="_blank"
+              <a
+                rel="noopener"
+                rel="noreferrer"
+                href="https://www.linkedin.com/company/aktivis-hijau"
+                class="link"
+                target="_blank"
                 ><i class="fab fa-linkedin"></i>Aktivis Hijau</a
               >
             </div>
             <div class="contact-info">
               <a
+                rel="noopener"
+                rel="noreferrer"
                 href="https://api.whatsapp.com/send?phone=+6289528359511&text=Halo"
                 class="link"
                 target="_blank"
@@ -273,7 +424,12 @@
               >
             </div>
             <div class="contact-info">
-              <a href="mailto:aktivisme.hijau@gmail.com" class="link" target="_blank"
+              <a
+                rel="noopener"
+                rel="noreferrer"
+                href="mailto:aktivisme.hijau@gmail.com"
+                class="link"
+                target="_blank"
                 ><i class="fas fa-envelope"></i>aktivisme.hijau@gmail.com</a
               >
             </div>
@@ -281,14 +437,21 @@
           <div class="section-content__right">
             <img src="./images/contact.svg" alt="" width="300" />
           </div>
-        </main>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="App-footer">Copyright &copy; 2020 Aktivis Hijau. All rights reserved.</footer>
-    <button id="scroll-top" onclick="window.scrollTo(0,0)">
-      <i class="fas fa-angle-up"></i>
-    </button>
+    <footer class="App-footer">
+      <span>&copy; 2020 Aktivis Hijau. All rights reserved.</span>
+      <button
+        aria-label="Scroll to top"
+        id="scroll-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        <i class="fas fa-angle-up"></i>
+      </button>
+      <!-- Developed by Christianto Budisaputra</a> -->
+    </footer>
   </body>
 </html>
