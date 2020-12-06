@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.breadcrumb {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1.25rem;
+  color: #3c3c3c;
+}
+
+p::first-letter {
+  margin-left: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+  font-family: serif;
+  font-weight: 400;
+}
+
+header {
+  margin: 0 auto 2rem;
+  padding: 7.5% 25%;
+  background-color: wheat;
+}
+
+main {
+  max-width: 90vw;
+  width: 600px;
+  margin: 0 auto 5%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+figure {
+  width: 90%;
+  margin: 5% auto;
+}
+
+figcaption {
+  color: #4c4c4c;
+  font-size: 0.8rem;
+  text-align: center;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}
+
+.social {
+  position: fixed;
+  left: 5%;
+  bottom: 10%;
+}
+
+.social i {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: wheat;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+body::-webkit-scrollbar-thumb {
+  background: #666;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
