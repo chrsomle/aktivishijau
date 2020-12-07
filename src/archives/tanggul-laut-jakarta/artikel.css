@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Rubik:ital,wght@0,400;0,600;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,8 @@
 
 body {
   line-height: 1.5;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
 }
 
 .breadcrumb {
@@ -15,7 +18,7 @@ body {
 }
 
 .breadcrumb a {
-  color: #333;
+  color: #dfdfdf;
   text-decoration: none;
 }
 
@@ -36,14 +39,23 @@ img {
 h1,
 h2 {
   margin-bottom: 1rem;
-  font-family: serif;
-  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
 }
 
 header {
-  margin: 0 auto 2rem;
+  margin: 0 auto 5%;
   padding: 7.5% 25%;
-  background-color: wheat;
+  background-color: #090909;
+  color: #efefef;
+  background-image: url('./cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.byline {
+  color: #afafaf;
 }
 
 main {
@@ -69,28 +81,66 @@ figcaption {
   user-select: none;
 }
 
-ul {
+.dafpus {
+  margin-top: 10%;
+}
+
+.dafpus ul {
   list-style: none;
 }
 
-li {
-  text-align: justify;
+.dafpus li {
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
+}
+
+.dafpus li::first-letter {
+  margin-left: -1rem;
 }
 
 .social {
   position: fixed;
   left: 5%;
-  bottom: 10%;
+  bottom: 20%;
+  text-align: center;
+}
+
+.social a {
+  text-decoration: none;
 }
 
 .social i {
   display: block;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 0.75rem;
   border-radius: 2rem;
-  background-color: wheat;
+  color: #efefef;
+  background-color: #090909;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.1));
   margin-top: 1rem;
   cursor: pointer;
+}
+
+footer {
+  z-index: 1;
+  padding: 2rem 10%;
+  color: #afafaf;
+  background-color: #090909;
+}
+
+#scroll-top {
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+#scroll-top .fas {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 50%;
+  background-color: #090909;
+  color: #efefef;
 }
 
 body::-webkit-scrollbar {
@@ -104,4 +154,13 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media only screen and (max-width: 840px) {
+  header {
+    padding: 7.5% 10%;
+  }
+  .social {
+    display: none;
+  }
 }
