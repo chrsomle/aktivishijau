@@ -55,7 +55,7 @@ header {
 }
 
 .byline {
-  color: #afafaf;
+  color: #cfcfcf;
 }
 
 main {
@@ -101,7 +101,7 @@ figcaption {
 .social {
   position: fixed;
   left: 5%;
-  bottom: 20%;
+  bottom: 17%;
   text-align: center;
 }
 
