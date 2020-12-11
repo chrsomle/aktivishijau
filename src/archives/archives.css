@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Rubik:ital,wght@0,400;0,600;1,400&display=swap');
 
+:root {
+  --dark: #2f2f2f;
+  --darker: #090909;
+  --light: #d7d7d7;
+  --lighter: #f7f7f7;
+  --fade: #a7a7a7;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +18,21 @@ body {
   font-family: 'Rubik', sans-serif;
   position: relative;
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .latest {
-  padding: 2% 2.5%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
+  margin: 1rem;
+}
+
+.latest h1 {
+  color: var(--dark);
+  margin-bottom: 0.5rem;
+}
+
+.latest h1 i {
+  margin-right: 0.5rem;
 }
 
 .latest-item {
@@ -25,7 +40,7 @@ body {
   min-width: 260px;
   max-width: 410px;
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: var(--lighter);
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.05));
@@ -33,13 +48,13 @@ body {
 
 .latest-item a {
   width: 100%;
-  color: #222;
+  color: var(--dark);
   text-decoration: none;
 }
 
 .item-desc {
   margin-top: 1rem;
-  border-top: 1px solid #dfdfdf;
+  border-top: 1px solid var(--light);
   padding-top: 0.5rem;
   font-size: 14px;
 }
@@ -47,11 +62,11 @@ body {
 .byline {
   display: block;
   margin-top: 0.5rem;
-  color: #777;
+  color: var(--fade);
 }
 
 .item-desc h2 {
-  color: #333;
+  color: var(--dark);
 }
 
 .item-desc p {
@@ -64,7 +79,7 @@ body {
   height: 240px;
   width: 100%;
   border-radius: 0.25rem;
-  background: var(--url), #222;
+  background: var(--url), var(--dark);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,8 +87,8 @@ body {
 
 footer {
   padding: 2rem 10%;
-  color: #afafaf;
-  background-color: #090909;
+  color: var(--light);
+  background-color: var(--darker);
 }
 
 #scroll-top {
@@ -88,14 +103,14 @@ footer {
   bottom: 2rem;
   padding: 0.6rem 0.7rem;
   border-radius: 50%;
-  background-color: #090909;
+  background-color: var(--darker);
   color: #efefef;
 }
 
 header {
   width: 100%;
-  padding: 1rem 10%;
-  background-color: #090909;
+  padding: 1.75rem 10%;
+  background-color: var(--darker);
   color: #efefef;
 }
 
@@ -141,4 +156,17 @@ header {
 }
 .link:hover::after {
   width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+body::-webkit-scrollbar-thumb {
+  background: #666;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
